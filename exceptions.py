@@ -6,9 +6,10 @@ try:
     file_open.seek(0)
     print(file_open.read())
 
-
 except SyntaxError as e:
     print(SyntaxError, e)
+except NameError as f:
+    print(NameError, f)
 
 else:
     print("no more exceptons")
