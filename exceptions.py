@@ -4,7 +4,8 @@ try:
     file_open = open('lok.txt', 'r')
     file_open.read()
     file_open.seek(0)
-    print(file_open.read()
+    print(file_open.read())
+
 
 except SyntaxError as e:
     print(SyntaxError, e)
