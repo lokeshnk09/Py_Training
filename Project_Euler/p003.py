@@ -3,7 +3,6 @@
 # What is the largest prime factor of the number 600851475143 ?
 
 
-
 def compute(n):
     result = []
     for i in range(2, n):
