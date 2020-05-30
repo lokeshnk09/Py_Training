@@ -24,61 +24,52 @@ offices = {
 }
 
 
-def compute(str):
-    lst = ()
-    count = 0
+def compute():
+    st = input('Enter title name: ')
     for x in range(len(offices.items())):
         for i, j in offices.items():
-            for k, v in tuple(j.items()):
-                print(k, v)
-                if str == v[1]:
-                    print(k, v)
+            t = tuple(j.items())
+            if st == t[1][1]:
+                print(f'{t[1][0]}: {st} ===> {t[2][0]} : {t[2][1]}')
+
         break
 
 
 
-        # for x in offices.keys():
-        #     for j in offices.values():
-        #         t = tuple(j.items())
-        #         for k, v in t:
-        #             k_list.append(k)
-        #             v_list.append(v)
-        #             print(k)
-        #             # print(f'{k} ---> {v}')
-        #         break
-        #
-        #     break
-
-            # t = tuple(v.items())
-            #
-            # k_list.append(k)
-            # v_list.append(v)
-            #print(v)
-            #print(f'{k}-{v}')
 
 
 
-            # lst.append(t)
-            # for j in sorted(lst):
-            #     print(j)
-            # for k, v in iter(j):
-            #
-            #     print(f'{k}===>{v}')
+            # if st == t[1][1]:
+            #     print(f'{t[1][0]}: {st} ===> {t[2][0]} : {t[2][1]}')
 
-            # if str == j[1][1]:
-            #     print(j)
-            # if str == j[1][1]:
-            #     print(j)
-            # if str == j[1][1]:
-            #     print(j)
+
+
+
+            # if st == t[1][1]:
+            #     print()
+
+
+
+            # if st != t[1][1]:
+            #     print(f'{t[1][0]}: {st} ===> {t[2][0]} : {t[2][1]}')
+
+
 
 
 if __name__ == '__main__':
-    compute('Autodesk')
+    compute()
 
-# for x in range(len(offices)):
-#     for i, j in offices.items():
-#         t = tuple(j.values())
-#         if re.findall('VMware', t[1]):
-#             print(i, t)
-#     break
+    # k_list = []
+    # v_list = []
+    # for x in range(len(offices.items())):
+    #     for i, j in offices.items():
+    #         for k, v in tuple(j.items()):
+    #             k_list.append(k)
+    #             v_list.append(v)
+    #             if str == v[1]:
+    #                 print(str, v_list[0],v_list[2])
+    #                 print(f'{k_list[1]}:{str} ====> {k_list[0]} = {v_list[0]}, {k_list[2]} = {v_list[2]}')
+    #             break
+    #     break
+    #
+
