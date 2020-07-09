@@ -35,27 +35,6 @@ def compute():
         break
 
 
-
-
-
-
-            # if st == t[1][1]:
-            #     print(f'{t[1][0]}: {st} ===> {t[2][0]} : {t[2][1]}')
-
-
-
-
-            # if st == t[1][1]:
-            #     print()
-
-
-
-            # if st != t[1][1]:
-            #     print(f'{t[1][0]}: {st} ===> {t[2][0]} : {t[2][1]}')
-
-
-
-
 if __name__ == '__main__':
     compute()
 
