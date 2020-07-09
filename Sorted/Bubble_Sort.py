@@ -1,5 +1,5 @@
 
-offices = {
+office = {
     "id1": {
         "$oid": "5d336c36a6e07114ac728cc2",
         "title": "Autodesk",
@@ -26,8 +26,8 @@ offices = {
 
 def compute():
     st = input('Enter title name: ')
-    for x in range(len(offices.items())):
-        for i, j in offices.items():
+    for x in range(len(office.items())):
+        for i, j in office.items():
             t = tuple(j.items())
             if st == t[1][1]:
                 print(f'{t[1][0]}: {st} ===> {t[2][0]} : {t[2][1]}')
