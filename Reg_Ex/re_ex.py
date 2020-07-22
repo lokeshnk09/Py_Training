@@ -23,10 +23,11 @@ Mr. T
 
 sentence = 'Start a sentence and then bring it to an end'
 
-# pattern = re.compile(r'\d+[.|-]\d+[-|.]\d+') # to get all Phone #'s'
+# pattern = re.compile(r'\d+[.|-]\d+[-|.]\d+')  # to get all Phone #'s'
 pattern = re.compile(r'M(r|s|rs)\.?\s[A-Z]\w*')  # to get all names
 
 matches = pattern.finditer(text_to_search)
 
 for match in matches:
     print(match)
+
