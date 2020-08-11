@@ -22,7 +22,8 @@ def matched_pattern(key, file):
     print()
 
 
-c = matched_pattern('Phones', 'Entries.txt')
+p = matched_pattern('Phones', 'Entries.txt')
+n = matched_pattern('Names', 'Entries.txt')
 
 
 
